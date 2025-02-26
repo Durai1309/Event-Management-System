@@ -1,8 +1,8 @@
-﻿using EventManagementSystemWeb.Models;
+﻿using EventManagementSystem.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace EventManagementSystemWeb.Controllers
+namespace EventManagementSystem.Web.Controllers
 {
     public class HomeController : Controller
     {
