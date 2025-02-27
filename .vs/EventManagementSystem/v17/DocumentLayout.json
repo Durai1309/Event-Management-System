@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|solutionrelative:eventmanagementsystem.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T17:24:52.818Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
