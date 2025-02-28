@@ -7,7 +7,7 @@ namespace EventManagementSystem.Infrastructure.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            //2.17.18
+            //2.28.18
         }
         public DbSet<Event> Event { get; set; }
         
