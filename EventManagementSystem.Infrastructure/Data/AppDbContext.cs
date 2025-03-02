@@ -7,10 +7,12 @@ namespace EventManagementSystem.Infrastructure.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            //3.43
+            //3.49
         }
         public DbSet<Event> Event { get; set; }
-        
+        public DbSet<EventNumber> EventNumbers { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -47,53 +49,53 @@ namespace EventManagementSystem.Infrastructure.Data
                         Sqft = 750,
                     });
 
-            //    modelBuilder.Entity<EventNumber>().HasData(
-            //        new EventNumber
-            //        {
-            //            Event_Number = 101,
-            //            EventId = 1,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 102,
-            //            EventId = 1,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 103,
-            //            EventId = 1,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 104,
-            //            EventId = 1,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 201,
-            //            EventId = 2,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 202,
-            //            EventId = 2,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 203,
-            //            EventId = 2,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 301,
-            //            EventId = 3,
-            //        },
-            //        new EventNumber
-            //        {
-            //            Event_Number = 302,
-            //            EventId = 3,
-            //        }
-            //        );
+            modelBuilder.Entity<EventNumber>().HasData(
+                new EventNumber
+                {
+                    Event_Number = 101,
+                    EventId = 1,
+                },
+                new EventNumber
+                {
+                    Event_Number = 102,
+                    EventId = 1,
+                },
+                new EventNumber
+                {
+                    Event_Number = 103,
+                    EventId = 1,
+                },
+                new EventNumber
+                {
+                    Event_Number = 104,
+                    EventId = 1,
+                },
+                new EventNumber
+                {
+                    Event_Number = 201,
+                    EventId = 2,
+                },
+                new EventNumber
+                {
+                    Event_Number = 202,
+                    EventId = 2,
+                },
+                new EventNumber
+                {
+                    Event_Number = 203,
+                    EventId = 2,
+                },
+                new EventNumber
+                {
+                    Event_Number = 301,
+                    EventId = 3,
+                },
+                new EventNumber
+                {
+                    Event_Number = 302,
+                    EventId = 3,
+                }
+                );
 
             //    modelBuilder.Entity<EventDetail>().HasData(
             //  new EventDetail

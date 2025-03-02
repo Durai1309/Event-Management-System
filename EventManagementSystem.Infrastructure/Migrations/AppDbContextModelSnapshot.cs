@@ -41,7 +41,8 @@ namespace EventManagementSystem.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("Occupancy")
                         .HasColumnType("int");
@@ -90,6 +91,82 @@ namespace EventManagementSystem.Infrastructure.Migrations
                             Price = 400.0,
                             Sqft = 750
                         });
+                });
+
+            modelBuilder.Entity("EventManagementSystem.Domain.Entities.EventNumber", b =>
+                {
+                    b.Property<int>("Event_Number")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SpecialDetails")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Event_Number");
+
+                    b.HasIndex("EventId");
+
+                    b.ToTable("EventNumbers");
+
+                    b.HasData(
+                        new
+                        {
+                            Event_Number = 101,
+                            EventId = 1
+                        },
+                        new
+                        {
+                            Event_Number = 102,
+                            EventId = 1
+                        },
+                        new
+                        {
+                            Event_Number = 103,
+                            EventId = 1
+                        },
+                        new
+                        {
+                            Event_Number = 104,
+                            EventId = 1
+                        },
+                        new
+                        {
+                            Event_Number = 201,
+                            EventId = 2
+                        },
+                        new
+                        {
+                            Event_Number = 202,
+                            EventId = 2
+                        },
+                        new
+                        {
+                            Event_Number = 203,
+                            EventId = 2
+                        },
+                        new
+                        {
+                            Event_Number = 301,
+                            EventId = 3
+                        },
+                        new
+                        {
+                            Event_Number = 302,
+                            EventId = 3
+                        });
+                });
+
+            modelBuilder.Entity("EventManagementSystem.Domain.Entities.EventNumber", b =>
+                {
+                    b.HasOne("EventManagementSystem.Domain.Entities.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
                 });
 #pragma warning restore 612, 618
         }
