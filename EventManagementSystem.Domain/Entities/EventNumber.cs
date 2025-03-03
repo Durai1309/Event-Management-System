@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace EventManagementSystem.Domain.Entities
 {
@@ -11,6 +12,7 @@ namespace EventManagementSystem.Domain.Entities
 
         [ForeignKey("Event")]
         public int EventId { get; set; }
+        [ValidateNever]
         public Event Event { get; set; }
         public string? SpecialDetails { get; set; }
     }

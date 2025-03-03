@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
@@ -24,9 +24,9 @@
               "RelativeDocumentMoniker": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeToolTip": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T07:22:29.486Z",
+              "WhenOpened": "2025-03-03T16:10:53.5Z",
               "EditorCaption": ""
             }
           ]
