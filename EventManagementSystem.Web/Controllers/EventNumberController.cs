@@ -14,7 +14,8 @@ namespace EventManagementSystem.Web.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var EventNumbers = _villaNumberService.GetAllVillaNumbers();
+            return View(EventNumbers);
         }
 
         public IActionResult Create()
