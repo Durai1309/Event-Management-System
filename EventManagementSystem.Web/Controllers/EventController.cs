@@ -1,91 +1,91 @@
-﻿//using EventManagementSystem.Domain.Entities;
-//using Microsoft.AspNetCore.Mvc;
+﻿using EventManagementSystem.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 
-//namespace EventManagementSystem.Web.Controllers
-//{
-//    public class EventController : Controller
-//    {
-//        public EventController()
-//        {
-            
-//        }
-//        public IActionResult Index()
-//        {
-//            return View();
-//        }
+namespace EventManagementSystem.Web.Controllers
+{
+    public class EventController : Controller
+    {
+        public EventController()
+        {
 
-//        public IActionResult Create()
-//        {
-//            return View();
-//        }
+        }
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-//        [HttpPost]
-//        public IActionResult Create(Event obj)
-//        {
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-//            if (obj.Name == obj.Description)
-//            {
-//                ModelState.AddModelError("name", "The description cannot exactly match the Name.");
-//            }
-//            if (ModelState.IsValid)
-//            {
+        [HttpPost]
+        public IActionResult Create(Event obj)
+        {
 
-//                _villaService.CreateVilla(obj);
-//                TempData["success"] = "The Event has been created successfully.";
-//                return RedirectToAction(nameof(Index));
-//            }
-//            return View();
-//        }
+            if (obj.Name == obj.Description)
+            {
+                ModelState.AddModelError("name", "The description cannot exactly match the Name.");
+            }
+            if (ModelState.IsValid)
+            {
 
-//        public IActionResult Update(int eventId)
-//        {
-//            Event? obj = _villaService.GetVillaById(eventId);
-//            if (obj == null)
-//            {
-//                return RedirectToAction("Error", "Home");
-//            }
-//            return View(obj);
-//        }
+                _villaService.CreateVilla(obj);
+                TempData["success"] = "The Event has been created successfully.";
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
 
-//        [HttpPost]
-//        public IActionResult Update(Event obj)
-//        {
-//            if (ModelState.IsValid && obj.Id > 0)
-//            {
+        public IActionResult Update(int eventId)
+        {
+            Event? obj = _villaService.GetVillaById(eventId);
+            if (obj == null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(obj);
+        }
 
-//                _villaService.UpdateVilla(obj);
-//                TempData["success"] = "The Event has been updated successfully.";
-//                return RedirectToAction(nameof(Index));
-//            }
-//            return View();
-//        }
+        [HttpPost]
+        public IActionResult Update(Event obj)
+        {
+            if (ModelState.IsValid && obj.Id > 0)
+            {
 
-//        public IActionResult Delete(int eventId)
-//        {
-//            Event? obj = _villaService.GetVillaById(eventId);
-//            if (obj is null)
-//            {
-//                return RedirectToAction("Error", "Home");
-//            }
-//            return View(obj);
-//        }
+                _villaService.UpdateVilla(obj);
+                TempData["success"] = "The Event has been updated successfully.";
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
+
+        public IActionResult Delete(int eventId)
+        {
+            Event? obj = _villaService.GetVillaById(eventId);
+            if (obj is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(obj);
+        }
 
 
-//        [HttpPost]
-//        public IActionResult Delete(Event obj)
-//        {
-//            bool deleted = _villaService.DeleteVilla(obj.Id);
-//            if (deleted)
-//            {
-//                TempData["success"] = "The villa has been deleted successfully.";
-//                return RedirectToAction(nameof(Index));
-//            }
-//            else
-//            {
-//                TempData["error"] = "Failed to delete the villa.";
-//            }
-//            return View();
-//        }
+        [HttpPost]
+        public IActionResult Delete(Event obj)
+        {
+            bool deleted = _villaService.DeleteVilla(obj.Id);
+            if (deleted)
+            {
+                TempData["success"] = "The villa has been deleted successfully.";
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                TempData["error"] = "Failed to delete the villa.";
+            }
+            return View();
+        }
 
-//    }
-//}
+    }
+}

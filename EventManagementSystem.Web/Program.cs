@@ -1,4 +1,6 @@
+using EventManagementSystem.Application.Common.Interfaces;
 using EventManagementSystem.Infrastructure.Data;
+using EventManagementSystem.Infrastructure.Repository;
 using EventManagementSystem.Web;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +12,8 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IEevntRepository, EventRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
