@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|solutionrelative:eventmanagementsystem.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.application\\common\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|solutionrelative:eventmanagementsystem.application\\common\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.application\\common\\interfaces\\ieevntrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|solutionrelative:eventmanagementsystem.application\\common\\interfaces\\ieevntrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.application\\common\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|solutionrelative:eventmanagementsystem.application\\common\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "EventManagementSystem.Application\\Common\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "EventManagementSystem.Application\\Common\\Interfaces\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Application\\Common\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "EventManagementSystem.Application\\Common\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T18:01:06.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IEevntRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IEevntRepository.cs",
-              "RelativeDocumentMoniker": "EventManagementSystem.Application\\Common\\Interfaces\\IEevntRepository.cs",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IEevntRepository.cs",
-              "RelativeToolTip": "EventManagementSystem.Application\\Common\\Interfaces\\IEevntRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T17:59:46.773Z",
+              "WhenOpened": "2025-03-09T08:43:41.864Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +41,9 @@
               "RelativeDocumentMoniker": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeToolTip": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T17:58:11.129Z",
+              "WhenOpened": "2025-03-09T08:34:51.464Z",
               "EditorCaption": ""
             }
           ]
