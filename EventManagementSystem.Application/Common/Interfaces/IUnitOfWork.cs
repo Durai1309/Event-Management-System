@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EventManagementSystem.Application.Common.Interfaces
+﻿namespace EventManagementSystem.Application.Common.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
+        IEevntRepository Event { get; }
+
     }
 }

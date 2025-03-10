@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementSystem.Appli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementSystem.Infrastructure", "EventManagementSystem.Infrastructure\EventManagementSystem.Infrastructure.csproj", "{E946AC26-2D08-4262-8D4A-10B86037FCDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementSystem.Web", "EventManagementSystem.Web\EventManagementSystem.Web.csproj", "{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementSystem.Web", "EventManagementSystem.Web\EventManagementSystem.Web.csproj", "{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
