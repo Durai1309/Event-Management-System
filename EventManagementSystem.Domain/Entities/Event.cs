@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EventManagementSystem.Domain.Entities
 {
@@ -12,6 +14,9 @@ namespace EventManagementSystem.Domain.Entities
         public double Price { get; set; }
         public int Sqft { get; set; }
         [Range(1, 10)]
+
+        [NotMapped]
+        public IFormFile? Image { get; set; }
         public int Occupancy { get; set; }
         [Display(Name = "Image Url")]
         public string? ImageUrl { get; set; }
