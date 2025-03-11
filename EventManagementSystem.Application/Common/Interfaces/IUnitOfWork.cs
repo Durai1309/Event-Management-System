@@ -4,5 +4,7 @@
     {
         IEevntRepository Event { get; }
 
+        IEventNumberRepository EventNumber { get; }
+
     }
 }

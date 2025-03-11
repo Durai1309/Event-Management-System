@@ -93,6 +93,99 @@ namespace EventManagementSystem.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("EventManagementSystem.Domain.Entities.EventDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EventId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EventId");
+
+                    b.ToTable("EventDetailS");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EventId = 1,
+                            Name = "Private Pool"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EventId = 1,
+                            Name = "Microwave"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EventId = 1,
+                            Name = "Private Balcony"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            EventId = 1,
+                            Name = "1 king bed and 1 sofa bed"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            EventId = 2,
+                            Name = "Private Plunge Pool"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            EventId = 2,
+                            Name = "Microwave and Mini Refrigerator"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            EventId = 2,
+                            Name = "Private Balcony"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            EventId = 2,
+                            Name = "king bed or 2 double beds"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            EventId = 3,
+                            Name = "Private Pool"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            EventId = 3,
+                            Name = "Jacuzzi"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            EventId = 3,
+                            Name = "Private Balcony"
+                        });
+                });
+
             modelBuilder.Entity("EventManagementSystem.Domain.Entities.EventNumber", b =>
                 {
                     b.Property<int>("Event_Number")
@@ -156,6 +249,17 @@ namespace EventManagementSystem.Infrastructure.Migrations
                             Event_Number = 302,
                             EventId = 3
                         });
+                });
+
+            modelBuilder.Entity("EventManagementSystem.Domain.Entities.EventDetail", b =>
+                {
+                    b.HasOne("EventManagementSystem.Domain.Entities.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
                 });
 
             modelBuilder.Entity("EventManagementSystem.Domain.Entities.EventNumber", b =>

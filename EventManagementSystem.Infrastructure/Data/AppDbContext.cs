@@ -7,10 +7,12 @@ namespace EventManagementSystem.Infrastructure.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            //5.11
+            //5.37
         }
         public DbSet<Event> Event { get; set; }
         public DbSet<EventNumber> EventNumbers { get; set; }
+        public DbSet<EventDetail> EventDetailS { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -97,69 +99,68 @@ namespace EventManagementSystem.Infrastructure.Data
                 }
                 );
 
-            //    modelBuilder.Entity<EventDetail>().HasData(
-            //  new EventDetail
-            //  {
-            //      Id = 1,
-            //      EventId = 1,
-            //      Name = "Private Pool"
-            //  }, new EventDetail
-            //  {
-            //      Id = 2,
-            //      EventId = 1,
-            //      Name = "Microwave"
-            //  }, new EventDetail
-            //  {
-            //      Id = 3,
-            //      EventId = 1,
-            //      Name = "Private Balcony"
-            //  }, new EventDetail
-            //  {
-            //      Id = 4,
-            //      EventId = 1,
-            //      Name = "1 king bed and 1 sofa bed"
-            //  },
+            modelBuilder.Entity<EventDetail>().HasData(
+          new EventDetail
+          {
+              Id = 1,
+              EventId = 1,
+              Name = "Private Pool"
+          }, new EventDetail
+          {
+              Id = 2,
+              EventId = 1,
+              Name = "Microwave"
+          }, new EventDetail
+          {
+              Id = 3,
+              EventId = 1,
+              Name = "Private Balcony"
+          }, new EventDetail
+          {
+              Id = 4,
+              EventId = 1,
+              Name = "1 king bed and 1 sofa bed"
+          },
 
-            //  new EventDetail
-            //  {
-            //      Id = 5,
-            //      EventId = 2,
-            //      Name = "Private Plunge Pool"
-            //  }, new EventDetail
-            //  {
-            //      Id = 6,
-            //      EventId = 2,
-            //      Name = "Microwave and Mini Refrigerator"
-            //  }, new EventDetail
-            //  {
-            //      Id = 7,
-            //      EventId = 2,
-            //      Name = "Private Balcony"
-            //  }, new EventDetail
-            //  {
-            //      Id = 8,
-            //      EventId = 2,
-            //      Name = "king bed or 2 double beds"
-            //  },
+          new EventDetail
+          {
+              Id = 5,
+              EventId = 2,
+              Name = "Private Plunge Pool"
+          }, new EventDetail
+          {
+              Id = 6,
+              EventId = 2,
+              Name = "Microwave and Mini Refrigerator"
+          }, new EventDetail
+          {
+              Id = 7,
+              EventId = 2,
+              Name = "Private Balcony"
+          }, new EventDetail
+          {
+              Id = 8,
+              EventId = 2,
+              Name = "king bed or 2 double beds"
+          },
 
-            //  new EventDetail
-            //  {
-            //      Id = 9,
-            //      EventId = 3,
-            //      Name = "Private Pool"
-            //  }, new EventDetail
-            //  {
-            //      Id = 10,
-            //      EventId = 3,
-            //      Name = "Jacuzzi"
-            //  }, new EventDetail
-            //  {
-            //      Id = 11,
-            //      EventId = 3,
-            //      Name = "Private Balcony"
-            //  });
+          new EventDetail
+          {
+              Id = 9,
+              EventId = 3,
+              Name = "Private Pool"
+          }, new EventDetail
+          {
+              Id = 10,
+              EventId = 3,
+              Name = "Jacuzzi"
+          }, new EventDetail
+          {
+              Id = 11,
+              EventId = 3,
+              Name = "Private Balcony"
+          });
 
-            //}
         }
     }
-}
+ }
