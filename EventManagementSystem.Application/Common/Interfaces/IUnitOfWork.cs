@@ -6,5 +6,7 @@
 
         IEventNumberRepository EventNumber { get; }
 
+        IEventDetailRepository EventDetail { get; }
+
     }
 }
