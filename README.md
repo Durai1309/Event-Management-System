@@ -1,1 +1,1 @@
-Event Management System project using .NET Core, Web API, MVC, Clean Architecture, SQL, Entity Framework, and Swagger.
+Event Management System project using .NET Core, MVC, Clean Architecture, SQL Server, Entity Framework Core, Repository Design Pattern, Unit of Work Pattern, Dependency Injection, and implementing SOLID principles for maintainable and scalable code.
