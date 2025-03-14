@@ -10,7 +10,7 @@ namespace EventManagementSystem.Web.Controllers
         private readonly IAmenityService _amenityService;
         private readonly IVillaService _villaService;
 
-        public AmenityController(IAmenityService amenityService, IVillaService villaService)
+        public EventDetailController(IAmenityService amenityService, IVillaService villaService)
         {
             _amenityService = amenityService;
             _villaService = villaService;
