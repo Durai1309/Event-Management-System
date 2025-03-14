@@ -1,4 +1,6 @@
 using EventManagementSystem.Application.Common.Interfaces;
+using EventManagementSystem.Application.Services.Implementation;
+using EventManagementSystem.Application.Services.Interface;
 using EventManagementSystem.Infrastructure.Data;
 using EventManagementSystem.Infrastructure.Repository;
 using EventManagementSystem.Web;
@@ -13,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IEventService, EventService>();
+
 
 var app = builder.Build();
 
