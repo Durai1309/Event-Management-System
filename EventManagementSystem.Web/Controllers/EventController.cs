@@ -123,7 +123,7 @@ namespace EventManagementSystem.Web.Controllers
             bool deleted = _eventService.DeleteEvent(obj.Id);
             if (deleted)
             {
-                TempData["success"] = "The villa has been deleted successfully.";
+                TempData["success"] = "The Event has been deleted successfully.";
                 return RedirectToAction(nameof(Index));
             }
             else
