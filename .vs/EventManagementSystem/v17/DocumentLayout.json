@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\views\\eventnumber\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\views\\eventnumber\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.infrastructure\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|solutionrelative:eventmanagementsystem.infrastructure\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\views\\eventnumber\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\views\\eventnumber\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E946AC26-2D08-4262-8D4A-10B86037FCDB}|EventManagementSystem.Infrastructure\\EventManagementSystem.Infrastructure.csproj|solutionrelative:eventmanagementsystem.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\views\\eventnumber\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\views\\eventnumber\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.application\\common\\interfaces\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|solutionrelative:eventmanagementsystem.application\\common\\interfaces\\idbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C2D65EC-3A84-42C2-8154-67607CD8CF0C}|EventManagementSystem.Domain\\EventManagementSystem.Domain.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C2D65EC-3A84-42C2-8154-67607CD8CF0C}|EventManagementSystem.Domain\\EventManagementSystem.Domain.csproj|solutionrelative:eventmanagementsystem.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C2D65EC-3A84-42C2-8154-67607CD8CF0C}|EventManagementSystem.Domain\\EventManagementSystem.Domain.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C2D65EC-3A84-42C2-8154-67607CD8CF0C}|EventManagementSystem.Domain\\EventManagementSystem.Domain.csproj|solutionrelative:eventmanagementsystem.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\EventNumber\\Index.cshtml",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Views\\EventNumber\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\EventNumber\\Index.cshtml",
-              "RelativeToolTip": "EventManagementSystem.Web\\Views\\EventNumber\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACsAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T08:15:46.495Z",
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Infrastructure\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "EventManagementSystem.Infrastructure\\Data\\DbInitializer.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAawCgAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:57:09.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\EventNumber\\Delete.cshtml",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Views\\EventNumber\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\EventNumber\\Delete.cshtml",
-              "RelativeToolTip": "EventManagementSystem.Web\\Views\\EventNumber\\Delete.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA0AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T08:15:29.73Z",
+              "Title": "IDbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IDbInitializer.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Application\\Common\\Interfaces\\IDbInitializer.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Common\\Interfaces\\IDbInitializer.cs",
+              "RelativeToolTip": "EventManagementSystem.Application\\Common\\Interfaces\\IDbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:56:01.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\EventNumber\\Create.cshtml",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Views\\EventNumber\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\EventNumber\\Create.cshtml",
-              "RelativeToolTip": "EventManagementSystem.Web\\Views\\EventNumber\\Create.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABEAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T08:15:12.013Z",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EventManagementSystem.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:52:48.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Domain\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Domain\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Domain\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "EventManagementSystem.Domain\\Entities\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:42:47.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Domain\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Domain\\Entities\\Booking.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Domain\\Entities\\Booking.cs",
+              "RelativeToolTip": "EventManagementSystem.Domain\\Entities\\Booking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:40:27.338Z",
               "EditorCaption": ""
             }
           ]

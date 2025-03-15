@@ -1,131 +1,132 @@
-﻿//using EventManagementSystem.Domain.Entities;
-//using EventManagementSystem.Web.ViewModels;
-//using Microsoft.AspNetCore.Mvc;
-//using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using EventManagementSystem.Application.Services.Interface;
+using EventManagementSystem.Domain.Entities;
+using EventManagementSystem.Web.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-//namespace EventManagementSystem.Web.Controllers
-//{
-//    public class EventDetailController : Controller
-//    {
-//        private readonly IAmenityService _amenityService;
-//        private readonly IVillaService _villaService;
+namespace EventManagementSystem.Web.Controllers
+{
+    public class EventDetailController : Controller
+    {
+        private readonly IEventDetailService _eventDetailService;
+        private readonly IEventService _eventService;
 
-//        public EventDetailController(IAmenityService amenityService, IVillaService villaService)
-//        {
-//            _amenityService = amenityService;
-//            _villaService = villaService;
-//        }
+        public EventDetailController(IEventDetailService eventDetailService, IEventService eventService)
+        {
+            _eventDetailService = eventDetailService;
+            _eventService = eventService;
+        }
 
-//        public IActionResult Index()
-//        {
-//            var amenities = _amenityService.GetAllAmenities();
-//            return View(amenities);
-//        }
+        public IActionResult Index()
+        {
+            var amenities = _eventDetailService.GetAllEventDetail();
+            return View(amenities);
+        }
 
-//        public IActionResult Create()
-//        {
-//            EventDetailVM EventDetailVM = new()
-//            {
-//                EventDetailList = _villaService.GetAllVillas().Select(u => new SelectListItem
-//                {
-//                    Text = u.Name,
-//                    Value = u.Id.ToString()
-//                })
-//            };
-//            return View(EventDetailVM);
-//        }
+        public IActionResult Create()
+        {
+            EventDetailVM EventDetailVM = new()
+            {
+                EventDetailList = _eventService.GetAllEvent().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                })
+            };
+            return View(EventDetailVM);
+        }
 
-//        [HttpPost]
-//        public IActionResult Create(EventDetailVM obj)
-//        {
+        [HttpPost]
+        public IActionResult Create(EventDetailVM obj)
+        {
 
-//            if (ModelState.IsValid)
-//            {
-//                _amenityService.CreateAmenity(obj.EventDetail);
-//                TempData["success"] = "The amenity has been created successfully.";
-//                return RedirectToAction(nameof(Index));
-//            }
+            if (ModelState.IsValid)
+            {
+                _eventDetailService.CreateEventDetail(obj.EventDetail);
+                TempData["success"] = "The EventDetail has been created successfully.";
+                return RedirectToAction(nameof(Index));
+            }
 
-//            obj.EventDetailList = _villaService.GetAllVillas().Select(u => new SelectListItem
-//            {
-//                Text = u.Name,
-//                Value = u.Id.ToString()
-//            });
-//            return View(obj);
-//        }
+            obj.EventDetailList = _eventService.GetAllEvent().Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            });
+            return View(obj);
+        }
 
-//        public IActionResult Update(int amenityId)
-//        {
-//            EventDetailVM EventDetailVM = new()
-//            {
-//                EventDetailList = _villaService.GetAllVillas().Select(u => new SelectListItem
-//                {
-//                    Text = u.Name,
-//                    Value = u.Id.ToString()
-//                }),
-//                EventDetail = _amenityService.GetAmenityById(amenityId)
-//            };
-//            if (EventDetailVM.EventDetail == null)
-//            {
-//                return RedirectToAction("Error", "Home");
-//            }
-//            return View(EventDetailVM);
-//        }
-
-
-//        [HttpPost]
-//        public IActionResult Update(EventDetailVM EventDetailVM)
-//        {
-
-//            if (ModelState.IsValid)
-//            {
-//                _amenityService.UpdateAmenity(EventDetailVM.EventDetail);
-//                TempData["success"] = "The amenity has been updated successfully.";
-//                return RedirectToAction(nameof(Index));
-//            }
-
-//            EventDetailVM.EventDetailList = _villaService.GetAllVillas().Select(u => new SelectListItem
-//            {
-//                Text = u.Name,
-//                Value = u.Id.ToString()
-//            });
-//            return View(EventDetailVM);
-//        }
+        public IActionResult Update(int eventId)
+        {
+            EventDetailVM EventDetailVM = new()
+            {
+                EventDetailList = _eventService.GetAllEvent().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                EventDetail = _eventDetailService.GetEventDetailById(eventId)
+            };
+            if (EventDetailVM.EventDetail == null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(EventDetailVM);
+        }
 
 
+        [HttpPost]
+        public IActionResult Update(EventDetailVM EventDetailVM)
+        {
 
-//        public IActionResult Delete(int Id)
-//        {
-//            EventDetailVM EventDetailVM = new()
-//            {
-//                EventDetailList = _villaService.GetAllVillas().Select(u => new SelectListItem
-//                {
-//                    Text = u.Name,
-//                    Value = u.Id.ToString()
-//                }),
-//                EventDetail = _amenityService.GetAmenityById(Id)
-//            };
-//            if (EventDetailVM.EventDetail == null)
-//            {
-//                return RedirectToAction("Error", "Home");
-//            }
-//            return View(EventDetailVM);
-//        }
+            if (ModelState.IsValid)
+            {
+                _eventDetailService.UpdateEventDetail(EventDetailVM.EventDetail);
+                TempData["success"] = "The EventDetail has been updated successfully.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            EventDetailVM.EventDetailList = _eventService.GetAllEvent().Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id.ToString()
+            });
+            return View(EventDetailVM);
+        }
 
 
 
-//        [HttpPost]
-//        public IActionResult Delete(EventDetailVM EventDetailVM)
-//        {
-//            EventDetail? objFromDb = _amenityService.GetAmenityById(EventDetailVM.EventDetail.Id);
-//            if (objFromDb is not null)
-//            {
-//                _amenityService.DeleteAmenity(objFromDb.Id);
-//                TempData["success"] = "The amenity has been deleted successfully.";
-//                return RedirectToAction(nameof(Index));
-//            }
-//            TempData["error"] = "The amenity could not be deleted.";
-//            return View();
-//        }
-//    }
-//}
+        public IActionResult Delete(int eventId)
+        {
+            EventDetailVM EventDetailVM = new()
+            {
+                EventDetailList = _eventService.GetAllEvent().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                EventDetail = _eventDetailService.GetEventDetailById(eventId)
+            };
+            if (EventDetailVM.EventDetail == null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(EventDetailVM);
+        }
+
+
+
+        [HttpPost]
+        public IActionResult Delete(EventDetailVM EventDetailVM)
+        {
+            EventDetail? objFromDb = _eventDetailService.GetEventDetailById(EventDetailVM.EventDetail.Id);
+            if (objFromDb is not null)
+            {
+                _eventDetailService.DeleteEventDetail(objFromDb.Id);
+                TempData["success"] = "The EventDetail has been deleted successfully.";
+                return RedirectToAction(nameof(Index));
+            }
+            TempData["error"] = "The EventDetail could not be deleted.";
+            return View();
+        }
+    }
+}

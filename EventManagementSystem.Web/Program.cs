@@ -17,6 +17,8 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IEventNumberService, EventNumberService>();
+builder.Services.AddScoped<IEventDetailService, EventDetailService>();
+
 
 
 
