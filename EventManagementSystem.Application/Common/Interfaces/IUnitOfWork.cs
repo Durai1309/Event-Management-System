@@ -8,5 +8,6 @@
 
         IEventDetailRepository EventDetail { get; }
 
+        void Save();
     }
 }

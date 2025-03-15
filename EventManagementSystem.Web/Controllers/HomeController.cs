@@ -1,23 +1,43 @@
-﻿using EventManagementSystem.Web.Models;
+﻿using EventManagementSystem.Application.Services.Interface;
+using EventManagementSystem.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace EventManagementSystem.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IEventService _eventService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IEventService eventService, IWebHostEnvironment webHostEnvironment)
         {
-            _logger = logger;
+            _eventService = eventService;
+            _webHostEnvironment = webHostEnvironment;
         }
-
         public IActionResult Index()
         {
-            return View();
+            HomeVM homeVM = new()
+            {
+                EventList = _eventService.GetAllEvent(),
+                Nights = 1,
+                CheckInDate = DateOnly.FromDateTime(DateTime.Now),
+            };
+            return View(homeVM);
         }
 
+        [HttpPost]
+        public IActionResult GetEventByDate(int nights, DateOnly checkInDate)
+        {
+
+            HomeVM homeVM = new()
+            {
+                CheckInDate = checkInDate,
+                EventList = _eventService.GetEventsAvailabilityByDate(nights, checkInDate),
+                Nights = nights
+            };
+
+            return PartialView("_EventList", homeVM);
+        }
         public IActionResult Privacy()
         {
             return View();
