@@ -30,15 +30,20 @@ namespace EventManagementSystem.Web.Controllers
         [HttpPost]
         public IActionResult Create(Event obj)
         {
-
             if (obj.Name == obj.Description)
             {
                 ModelState.AddModelError("name", "The description cannot exactly match the Name.");
             }
+
             if (obj.Image != null)
             {
                 string fileName = Guid.NewGuid().ToString() + Path.GetExtension(obj.Image.FileName);
                 string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"images\EventImage");
+
+                if (!Directory.Exists(imagePath))
+                {
+                    Directory.CreateDirectory(imagePath);
+                }
 
                 using var fileStream = new FileStream(Path.Combine(imagePath, fileName), FileMode.Create);
                 obj.Image.CopyTo(fileStream);
@@ -51,13 +56,13 @@ namespace EventManagementSystem.Web.Controllers
             }
             if (ModelState.IsValid)
             {
-
                 _eventService.CreateEvent(obj);
                 TempData["success"] = "The Event has been created successfully.";
                 return RedirectToAction(nameof(Index));
             }
             return View();
         }
+
 
         public IActionResult Update(int eventId)
         {

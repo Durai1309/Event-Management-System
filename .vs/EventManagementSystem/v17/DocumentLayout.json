@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.application\\services\\implementation\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B591918E-CD5D-4932-A237-1B555C81C224}|EventManagementSystem.Application\\EventManagementSystem.Application.csproj|solutionrelative:eventmanagementsystem.application\\services\\implementation\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.web\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1205E1F-53B8-42F6-AAA0-672AF58F72F3}|EventManagementSystem.Web\\EventManagementSystem.Web.csproj|solutionrelative:eventmanagementsystem.web\\views\\shared\\_notification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7C2D65EC-3A84-42C2-8154-67607CD8CF0C}|EventManagementSystem.Domain\\EventManagementSystem.Domain.csproj|c:\\users\\durai\\source\\repos\\eventmanagementsystem\\eventmanagementsystem.domain\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C2D65EC-3A84-42C2-8154-67607CD8CF0C}|EventManagementSystem.Domain\\EventManagementSystem.Domain.csproj|solutionrelative:eventmanagementsystem.domain\\entities\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeToolTip": "EventManagementSystem.Web\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Domain\\Entities\\Event.cs",
+              "RelativeDocumentMoniker": "EventManagementSystem.Domain\\Entities\\Event.cs",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Domain\\Entities\\Event.cs",
+              "RelativeToolTip": "EventManagementSystem.Domain\\Entities\\Event.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T17:24:12.578Z",
+              "WhenOpened": "2025-03-15T05:27:06.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "EventManagementSystem.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAYAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\Event\\Create.cshtml",
+              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Views\\Event\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\Event\\Create.cshtml",
+              "RelativeToolTip": "EventManagementSystem.Web\\Views\\Event\\Create.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T17:21:52.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Services\\Implementation\\EventService.cs",
-              "RelativeDocumentMoniker": "EventManagementSystem.Application\\Services\\Implementation\\EventService.cs",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Application\\Services\\Implementation\\EventService.cs",
-              "RelativeToolTip": "EventManagementSystem.Application\\Services\\Implementation\\EventService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwDoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T16:47:40.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Controllers\\EventController.cs",
-              "RelativeToolTip": "EventManagementSystem.Web\\Controllers\\EventController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBUAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T18:15:05.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Notification.cshtml",
-              "DocumentMoniker": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\Shared\\_Notification.cshtml",
-              "RelativeDocumentMoniker": "EventManagementSystem.Web\\Views\\Shared\\_Notification.cshtml",
-              "ToolTip": "C:\\Users\\Durai\\source\\repos\\EventManagementSystem\\EventManagementSystem.Web\\Views\\Shared\\_Notification.cshtml",
-              "RelativeToolTip": "EventManagementSystem.Web\\Views\\Shared\\_Notification.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T17:24:52.816Z",
+              "WhenOpened": "2025-03-15T05:14:27.307Z",
               "EditorCaption": ""
             }
           ]
