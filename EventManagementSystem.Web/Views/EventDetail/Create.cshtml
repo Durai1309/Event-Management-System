@@ -15,7 +15,7 @@
                 <div class="form-floating py-1 col-12">
                     <select asp-for="@Model.EventDetail.EventId" asp-items="@Model.EventDetailList"
                             class="form-select border shadow">
-                        <option disabled selected>--Select Villa--</option>
+                        <option disabled selected>--Select EventDetail--</option>
                     </select>
                     <label asp-for="EventDetail.EventId" class="ms-2"></label>
                     <span asp-validation-for="EventDetail.EventId" class="text-danger"></span>
