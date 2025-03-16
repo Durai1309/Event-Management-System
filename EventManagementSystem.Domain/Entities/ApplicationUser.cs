@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace EventManagementSystem.Domain.Entities
 {
@@ -12,5 +7,4 @@ namespace EventManagementSystem.Domain.Entities
         public string Name { get; set; }
         public DateTime CreatedAt { get; set; }
     }
-    
 }
