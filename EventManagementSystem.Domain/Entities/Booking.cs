@@ -32,9 +32,9 @@ namespace EventManagementSystem.Domain.Entities
         [Required]
         public DateTime BookingDate { get; set; }
         [Required]
-        public DateOnly CheckInDate { get; set; }
+        public DateTime CheckInDate { get; set; }
         [Required]
-        public DateOnly CheckOutDate { get; set; }
+        public DateTime CheckOutDate { get; set; }
 
         public DateTime ActualCheckInDate { get; set; }
         public DateTime ActualCheckOutDate { get; set; }

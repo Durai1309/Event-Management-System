@@ -1,9 +1,4 @@
 ﻿using EventManagementSystem.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EventManagementSystem.Application.Services.Interface
 {
@@ -14,7 +9,7 @@ namespace EventManagementSystem.Application.Services.Interface
         void CreateEvent(Event createEvent);
         void UpdateEvent(Event updateEvent);
         bool DeleteEvent(int id);
-        IEnumerable<Event> GetEventsAvailabilityByDate(int nights, DateOnly checkInDate);
-        bool IsEventAvailableByDate(int villaId, int nights, DateOnly checkInDate);
+        IEnumerable<Event> GetEventsAvailabilityByDate(int nights, DateTime checkInDate);
+        bool IsEventAvailableByDate(int villaId, int nights, DateTime checkInDate);
     }
 }

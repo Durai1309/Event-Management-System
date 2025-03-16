@@ -8,6 +8,10 @@
 
         IEventDetailRepository EventDetail { get; }
 
+        IApplicationUserRepository User { get; }
+
+        IBookingRepository Booking { get; }
+
         void Save();
     }
 }

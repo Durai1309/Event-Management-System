@@ -15,7 +15,7 @@ namespace EventManagementSystem.Application.Utility
         public const string StatusRefunded = "Refunded";
 
         public static int VillaRoomsAvailable_Count(int villaId,
-          List<EventNumber> villaNumberList, DateOnly checkInDate, int nights,
+          List<EventNumber> villaNumberList, DateTime checkInDate, int nights,
          List<Booking> bookings)
         {
             List<int> bookingInDate = new();

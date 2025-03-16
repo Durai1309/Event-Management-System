@@ -1,5 +1,6 @@
 ﻿using EventManagementSystem.Application.Common.Interfaces;
 using EventManagementSystem.Application.Services.Interface;
+using EventManagementSystem.Application.Utility;
 using EventManagementSystem.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -61,14 +62,35 @@ namespace EventManagementSystem.Application.Services.Implementation
             return _unitOfWork.Event.Get(u => u.Id == id, includeProperties: "EventDetail");
         }
 
-        public IEnumerable<Event> GetEventsAvailabilityByDate(int nights, DateOnly checkInDate)
+        public IEnumerable<Event> GetEventsAvailabilityByDate(int nights, DateTime checkInDate)
         {
-            throw new NotImplementedException();
+            var eventList = _unitOfWork.Event.GetAll(includeProperties: "EventDetail").ToList();
+            var villaNumbersList = _unitOfWork.EventNumber.GetAll().ToList();
+            var bookedVillas = _unitOfWork.Booking.GetAll(u => u.Status == SD.StatusApproved ||
+            u.Status == SD.StatusCheckedIn).ToList();
+
+
+            foreach (var villa in eventList)
+            {
+                int roomAvailable = SD.VillaRoomsAvailable_Count
+                    (villa.Id, villaNumbersList, checkInDate, nights, bookedVillas);
+
+                villa.IsAvailable = roomAvailable > 0 ? true : false;
+            }
+
+            return eventList;
         }
 
-        public bool IsEventAvailableByDate(int villaId, int nights, DateOnly checkInDate)
+        public bool IsEventAvailableByDate(int villaId, int nights, DateTime checkInDate)
         {
-            throw new NotImplementedException();
+            var villaNumbersList = _unitOfWork.EventNumber.GetAll().ToList();
+            var bookedVillas = _unitOfWork.Booking.GetAll(u => u.Status == SD.StatusApproved ||
+            u.Status == SD.StatusCheckedIn).ToList();
+
+            int roomAvailable = SD.VillaRoomsAvailable_Count
+                (villaId, villaNumbersList, checkInDate, nights, bookedVillas);
+
+            return roomAvailable > 0;
         }
 
         public void UpdateEvent(Event updateEvent)

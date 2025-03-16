@@ -20,13 +20,13 @@ namespace EventManagementSystem.Web.Controllers
             {
                 EventList = _eventService.GetAllEvent(),
                 Nights = 1,
-                CheckInDate = DateOnly.FromDateTime(DateTime.Now),
+                CheckInDate =DateTime.Now,
             };
             return View(homeVM);
         }
 
         [HttpPost]
-        public IActionResult GetEventByDate(int nights, DateOnly checkInDate)
+        public IActionResult GetEventByDate(int nights, DateTime checkInDate)
         {
 
             HomeVM homeVM = new()
